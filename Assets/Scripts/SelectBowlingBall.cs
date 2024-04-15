@@ -13,6 +13,7 @@ public class SelectBowlingBall : MonoBehaviour
     private void Awake()
     {
         ballRenderer = GetComponent<Renderer>();
+        ballRenderer.material = defaultBallMat;
     }
 
     public void OnHoverEnter()
@@ -24,5 +25,4 @@ public class SelectBowlingBall : MonoBehaviour
     {
         ballRenderer.material = defaultBallMat;
     }
-
 }
